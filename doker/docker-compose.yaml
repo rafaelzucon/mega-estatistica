@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - ./data:/var/lib/postgresql/
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Banco123
+      POSTGRES_DB: postgres
