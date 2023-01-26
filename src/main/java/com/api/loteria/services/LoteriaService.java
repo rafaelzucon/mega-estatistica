@@ -31,7 +31,7 @@ public class LoteriaService implements LoteriaServiceInterface {
     public List<Nro1LoteriaModelCount> getReportByNativeQuery() {
         return loteriaRepository.findGroupByReportWithNativeQuery()
                 .stream()
-                .map(iReport -> new Nro1LoteriaModelCount(iReport.getCountNro1(),iReport.getCont1()))
+                .map(iReport -> new Nro1LoteriaModelCount(iReport.getCountNro1(), iReport.getCont1()))
                 .collect(Collectors.toList());
     }
 

@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface LoteriaServiceInterface {
     List<Nro1LoteriaModelCount> getReportByNativeQuery();
-
     List<LoteriaModel> findAll();
-
     LoteriaModel save(LoteriaModel loteriaModel);
 }

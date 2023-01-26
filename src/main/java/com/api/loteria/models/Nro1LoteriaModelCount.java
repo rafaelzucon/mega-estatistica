@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @ToString
 public class Nro1LoteriaModelCount {
     private String countNro1;
-    private BigDecimal count1;
+    private String count1;
 
 
 }
