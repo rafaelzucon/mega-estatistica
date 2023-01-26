@@ -42,16 +42,6 @@ public class LoteriaController {
 
     @GetMapping("/resultadoQuery")
     public ResponseEntity<List<Nro1LoteriaModelCount>> getQuery(){
-        List<Nro1LoteriaModelCount> itens = loteriaServiceInterface.getReportByNativeQuery();
-        int i=0;
-        for (Nro1LoteriaModelCount item: itens) {
-            i++;
-            System.out.println("Item "+i+": "+item);
-            System.out.println("Item "+i+": getCountNro1: "+item.getCountNro1()+" getCount1: "+item.getCount1());
-        }
-
-        System.out.println(itens.size());
-
         return ResponseEntity.status(HttpStatus.OK).body(loteriaServiceInterface.getReportByNativeQuery());
     }
 

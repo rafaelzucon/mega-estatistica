@@ -14,6 +14,4 @@ import java.math.BigDecimal;
 public class Nro1LoteriaModelCount {
     private String countNro1;
     private String count1;
-
-
 }
