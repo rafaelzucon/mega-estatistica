@@ -11,6 +11,8 @@ import java.util.UUID;
 
 @Repository
 public interface LoteriaRepository extends JpaRepository<LoteriaModel, UUID> {
+
+    // UMA QUERY NATIVA É UMA REGRA DE NEGÓCIO?
     @Query(value = "select " +
             "ts.nro1 as countNro1, " +
             "count(*) as count1 " +
