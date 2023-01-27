@@ -40,6 +40,7 @@ public class LoteriaController {
         return ResponseEntity.status(HttpStatus.OK).body(loteriaServiceInterface.findAll());
     }
 
+    //NATIVE QUERY
     @GetMapping("/resultadoQuery")
     public ResponseEntity<List<Nro1LoteriaModelCount>> getQuery(){
         return ResponseEntity.status(HttpStatus.OK).body(loteriaServiceInterface.getReportByNativeQuery());
