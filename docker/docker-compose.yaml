@@ -11,3 +11,4 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: Banco123
       POSTGRES_DB: postgres
+#      POSTGRES_DB2
