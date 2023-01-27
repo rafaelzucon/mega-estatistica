@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+//ENTITY
 @Entity
 @IdClass(LoteriaModelId.class)
 @Table(name = "TB_SORTEIOS")
