@@ -29,7 +29,7 @@ public class LoteriaController {
     @PostMapping("/incluir")
     public ResponseEntity<Object> saveLoteria(@RequestBody @Valid LoteriaDto loteriaDto){
 
-        var loteriaModel = new LoteriaModel();
+        LoteriaModel loteriaModel = new LoteriaModel();
         BeanUtils.copyProperties(loteriaDto, loteriaModel);
         loteriaModel.setRegistrationDate(LocalDateTime.now(ZoneId.of("UTC")));
         return ResponseEntity.status(HttpStatus.CREATED).body(loteriaServiceInterface.save(loteriaModel));
